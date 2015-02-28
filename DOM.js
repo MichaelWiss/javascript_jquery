@@ -55,3 +55,20 @@ if (elUsername.addEventListener) {           // If event listener supported
     checkLength(e, 5);                             // Call checkLength()
   });
 }
+
+// event propogation from Eloquent Javascript
+
+
+<p>A paragraph with a <button>button</button>.</p>
+<script>
+  var para = document.querySelector("p");
+  var button = document.querySelector("button");
+  para.addEventListener("mousedown", function() {
+    console.log("Handler for paragraph.");
+  });
+  button.addEventListener("mousedown", function(event) {
+    console.log("Handler for button.");
+    if (event.which == 3)
+      event.stopPropagation();
+  });
+</script>

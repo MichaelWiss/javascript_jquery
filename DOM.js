@@ -139,3 +139,13 @@ function printFarmInventory(cows, chickens, pigs) {
 }
 
 printFarmInventory(7, 16, 3);
+
+// passing an "action" as a function value
+
+function forEach(array, action) {
+  for (var i = 0; i < array.length; i++)
+    action(array[i]);
+}
+
+forEach(["Wampeter", "Foma", "Granfalloon"], console.log);
+

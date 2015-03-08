@@ -1,5 +1,5 @@
 # javascript_jquery
 
-Jon Duckett's great book
+Jon Duckett's great book Javascript & JQuery
 
 Eloquent Javascript

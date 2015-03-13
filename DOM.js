@@ -208,4 +208,11 @@ $(function() {
   $('li#one').remove();
 });
 
+//working with attributes
+$(function() {
+  $('li#three').removeClass('hot');
+  $('li.hot').addClass('favorite');
+  $('ul').attr('id', 'group');
+});
+
 

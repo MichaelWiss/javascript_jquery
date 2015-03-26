@@ -545,3 +545,11 @@ $(function() {                                  // DOM has loaded
     $('[href="' + page + '"]').addClass('current'); // Update current link
   };
 });
+
+// angularjs view and view model
+
+function BasketCtrl($scope) {
+  $scope.description = 'Single ticket';
+  $scope.cost = 8;
+  $scope.qty = 1;
+}

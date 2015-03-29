@@ -590,7 +590,6 @@ function loadScript() {
   document.body.appendChild(script);
 }
 
+window.onload = loadScript;
 
 //testing
-
-window.onload = loadScript;

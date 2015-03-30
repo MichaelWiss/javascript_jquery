@@ -592,6 +592,7 @@ function loadScript() {
 
 window.onload = loadScript;
 
+<<<<<<< HEAD
 
 //debugger keyword to create a breakpoint
 
@@ -612,3 +613,6 @@ $('#calculator').on('submit', function(e) {
 
   $form.append('<p>' + area + '</p>');
 });
+=======
+//testing
+>>>>>>> 0e56cc48ccdca8ead3af3e38545c0352adfedb12

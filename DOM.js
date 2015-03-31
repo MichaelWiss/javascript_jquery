@@ -592,8 +592,7 @@ function loadScript() {
 
 window.onload = loadScript;
 
-<<<<<<< HEAD
-
+//testing
 //debugger keyword to create a breakpoint
 
 var $form, width, height, area;
@@ -613,6 +612,16 @@ $('#calculator').on('submit', function(e) {
 
   $form.append('<p>' + area + '</p>');
 });
-=======
-//testing
->>>>>>> 0e56cc48ccdca8ead3af3e38545c0352adfedb12
+
+//accordion
+
+$('.accordion').on('click', '.accordion-control', function(e){ // When clicked
+  e.preventDefault();                    // Prevent default action of button
+  $(this)                                // Get the element the user clicked on
+    .next('.accordion-panel')            // Select following panel 
+    .not(':animated')                    // If it is not currently animating
+    .slideToggle();                      // Use slide toggle to show or hide it
+});
+
+
+
